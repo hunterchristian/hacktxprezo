@@ -98,12 +98,13 @@ export default class Presentation extends React.Component {
           <Heading margin="150px" size={6} textColor="primary" caps>
             Products built on React.js
           </Heading>
-          <div style={ { display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr', gridColumnGap: '20px' } }>
+          <div style={ { display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr', gridColumnGap: '20px' } }>
+            <Image src={images.theHomeDepot} style={ { alignSelf: 'center' } } />
             <Image src={images.reddit} style={ { alignSelf: 'center' } } />
             <Image src={images.airbnb} width={ 300 } style={ { alignSelf: 'center' } }/>
             <Image src={images.tesla} style={ { alignSelf: 'center' } } />
-            <Image src={images.facebook} style={ { alignSelf: 'center' } } />
             <Image src={images.netflix} style={ { alignSelf: 'center' } } />
+            <Image src={images.facebook} style={ { alignSelf: 'center' } } />
           </div>
         </Slide>
         <Slide>
