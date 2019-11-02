@@ -107,6 +107,72 @@ export default class Presentation extends React.Component {
           </div>
         </Slide>
         <Slide>
+          <Heading margin="150px" size={6} textColor="secondary" caps>
+            How did we get here?
+          </Heading>
+        </Slide>
+        <Slide>
+          <Heading margin="150px" size={6} textColor="secondary" caps>
+            Early days - one codebase per browser
+          </Heading>
+        </Slide>
+        <Slide>
+          <Heading margin="150px" size={6} textColor="secondary" caps>
+            JQuery saves the day
+          </Heading>
+          <Text margin="20px" textColor="tertiary" bold>
+            One codebase that works in all browsers
+          </Text>
+        </Slide>
+        <Slide>
+          <Heading margin="150px" size={6} textColor="secondary" caps>
+            Problem: spaghetti code
+          </Heading>
+        </Slide>
+        <Slide>
+          <Heading margin="150px" size={6} textColor="secondary" caps>
+            Solution: organize code into components!
+          </Heading>
+          <Text margin="20px" textColor="tertiary" bold>
+            Angular 1.0 launched
+          </Text>
+        </Slide>
+        <Slide>
+          <Heading margin="150px" size={6} textColor="secondary" caps>
+            Components
+          </Heading>
+          <Text margin="20px" textColor="tertiary" bold>
+            Separate UI into pieces called "components"
+          </Text>
+          <Text margin="20px" textColor="tertiary" bold>
+            Each component responsible for its own HTML, JS, and CSS
+          </Text>
+          <Text margin="20px" textColor="tertiary" bold>
+            Each component manages its own state
+          </Text>
+        </Slide>
+        <Slide>
+          <Heading margin="150px" size={6} textColor="secondary" caps>
+            Problem: Angular 2.0 breaks the internet
+          </Heading>
+        </Slide>
+        <Slide>
+          <Heading margin="150px" size={6} textColor="secondary" caps>
+            Solution: React.js!
+          </Heading>
+        </Slide>
+        <Slide>
+          <Heading margin="150px" size={6} textColor="secondary" caps>
+            Components: now with HTML in JS!
+          </Heading>
+          <Text margin="20px" textColor="tertiary" bold>
+            JSX
+          </Text>
+          <Text margin="20px" textColor="tertiary" bold>
+            Benefit: can view all pieces of a component in one file
+          </Text>
+        </Slide>
+        <Slide>
           <Heading size={6} textColor="secondary">
             JSX
           </Heading>
@@ -130,6 +196,11 @@ export default class Presentation extends React.Component {
           <Text>
             See for yourself: <Link href="https://babeljs.io/en/repl">https://babeljs.io/en/repl</Link>
           </Text>
+        </Slide>
+        <Slide>
+          <Heading margin="150px" size={6} textColor="secondary" caps>
+            Demo
+          </Heading>
         </Slide>
       </Deck>
     );
