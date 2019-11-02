@@ -33,6 +33,7 @@ const images = {
   facebook: require('../assets/facebook.svg'),
   reddit: require('../assets/reddit.svg'),
   netflix: require('../assets/netflix.svg'),
+  cra: require('../assets/cra.png'),
 };
 
 // Require CSS
@@ -76,10 +77,10 @@ export default class Presentation extends React.Component {
             Why learn React.js?
           </Heading>
           <List>
-            <ListItem margin="20px">React in the browser - React.js - e.g. Netflix, Reddit</ListItem>
+            <ListItem margin="20px">React in the browser - React.js</ListItem>
             <ListItem margin="20px">React on mobile - React Native</ListItem>
             <ListItem margin="20px">React in the desktop - ReactDesktop.js</ListItem>
-            <ListItem margin="20px">This presentation is written in React! - Spectacle.js</ListItem>
+            <ListItem margin="20px">This presentation is written in React!</ListItem>
           </List>
         </Slide>
         <Slide style={{ alignItems: 'flex-start' }} transition={['fade']} bgColor="tertiary">
@@ -197,6 +198,50 @@ export default class Presentation extends React.Component {
           <Text>
             See for yourself: <Link href="https://babeljs.io/en/repl">https://babeljs.io/en/repl</Link>
           </Text>
+        </Slide>
+        <Slide>
+          <Heading size={6} textColor="secondary">
+            Create React App
+          </Heading>
+          <Text>
+            Bootstraps a ready-to-go React application
+          </Text>
+          <Link>https://create-react-app.dev/docs/getting-started</Link>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Quote textColor="primary" textSize="50px" style={{textAlign: 'left'}}>
+            npx create-react-app my-app
+          </Quote>
+          <Quote textColor="primary" textSize="50px" style={{textAlign: 'left'}}>
+            cd my-app
+          </Quote>
+          <Quote textColor="primary" textSize="50px" style={{textAlign: 'left'}}>
+            npm start
+          </Quote>
+        </Slide>
+        <Slide>
+          <CodePane
+            lang="jsx"
+            source={require('raw-loader!../assets/cra.example')}
+            margin="20px auto"
+            overflow="overflow"
+            style={{ fontSize: '23px' }}
+          />
+        </Slide>
+        <Slide>
+          <CodePane
+            lang="jsx"
+            source={require('raw-loader!../assets/cra-app.example')}
+            margin="20px auto"
+            overflow="overflow"
+            style={{ fontSize: '18px' }}
+          />
+        </Slide>
+        <Slide>
+          <Heading size={6} textColor="secondary">
+            http://localhost:3000/
+          </Heading>
+          <Image src={images.cra} />
         </Slide>
         <Slide>
           <Heading margin="150px" size={6} textColor="secondary" caps>
