@@ -115,7 +115,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide>
           <Heading margin="150px" size={6} textColor="secondary" caps>
-            Early days - one codebase per browser
+            Early days - had to code special fixes for each browser
           </Heading>
         </Slide>
         <Slide>
